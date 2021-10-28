@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            /*
+            Ordem de Declaração do Border-Radius
+            - Horário
+            - top-left -> top-right -> bottom-right -> bottom-left
+            - top-left-bottom-right -> top-right-bottom-left
+            - top-left-bottom-right-top-right-bottom-left
+            */
+            border-radius: 10px 0px;
+        }
+        h1 {
+            box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.700);
+            text-align: center;
+        }
+        nav {
+            background-color: rgb(75, 75, 75);
+            padding: 3px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.700);
+            /*
+            Ordem de Declaração do Box-Shadow
+            - x offset -> y offset -> blur -> spread -> collor
+            */
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        article {
+            background-color: rgb(190, 190, 190);
+            padding: 5px;
+        }
+        #sec-esp {
+            padding: 3px;
+        }
+        aside {
+            background-color: gray;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            margin: 10px;
+            padding: 3px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        #bola {
+            height: 50px;
+            width: 50px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Grouping Tags
+        - Funcionam como div's, porém possuem semântica
+        - header, main, nav, section, article, aside, footer
+    -->
+    <header>
+        <h1>Site</h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav><br>
+    </header>
+    <main>
+        <section>
+            <h2>Artigo 1</h2>
+            <article>
+                <section id="sec-esp">
+                    <h3>Título 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, deserunt! Aliquam distinctio a culpa accusantium saepe accusamus nulla officia exercitationem quaerat!
+                    </p>
+                    <aside>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</aside> 
+                </section>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

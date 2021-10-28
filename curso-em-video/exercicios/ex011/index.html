@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia</title>
+</head>
+<body>
+    <h1>Mídia</h1>
+    <hr>
+    <h2>Imagens Dinâmicas</h2>
+    <p>São imagens que, dependendo do dispositivo ou do tamanho do navegador, modificam-se para se adaptar.
+    </p><br>
+    <picture>
+        <source media="(max-width: 650px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 950px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <br>
+    <picture>
+        <source media="(min-width: 950px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 650px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="Imagem Flexível">
+    </picture><br>
+    <h2>Áudios</h2>
+    <audio preload="metadata" controls loop>
+        <source src="midia/vicio.mp3" type="audio/mpeg">
+        <source src="midia/vicio.ogg" type="audio/ogg">
+        <source src="midia/vicio.wav" type="audio/wav">
+        <p>Por falta de compatibilidade, não foi possível reproduzir o áudio.</p>
+    </audio><!-- O HTML possui plena compatiiblidade com MP3, OGG e WAV. Entretanto ,cada navegador possui, também, sua própria compatibilidade. --><br>
+    <h2>Vídeos de Hospedagem Local</h2>
+    <p>Vídeos hospedados no próprio servidor do site.
+    </p>
+    <video width="560" poster="imagens/ride-the-lightning.jpg" controls autoplay loop>
+        <source src="midia/fade-to-black.mp4" type="video/mp4">
+        <source src="midia/fade-to-black.m4v" type="video/mp4">
+        <source src="midia/fade-to-black.webm" type="video/webm">
+        <source src="midia/fade-to-black.ogv" type="video/ogg"> <!-- A hospedagem local, juntamente com o tipo de vídeo que será reproduzido, pode gerar uma sobrecarga de consumo de banda. -->
+        <p>Por falta de compatibilidade, não foi possível reproduzir o vídeo.
+        </p>
+    </video><!-- O HTML possui plena compatiiblidade com MP4, M4V, WebM e OGV. Entretanto, cada navegador possui, também, sua própria compatibilidade. --><br>
+    <h2>Vídeos de Hospedagem Externa</h2>
+    <p>Vídeos hospedados num servidor diferente do servidor do site e que são incorporados neste, não havendo consumo de banda.
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ujwiWjJLwBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <iframe src="https://player.vimeo.com/video/40693495" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

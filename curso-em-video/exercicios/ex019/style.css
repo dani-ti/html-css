@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*
+Em HTML é id = Em CSS é #
+Em HTML é class = Em CSS é .
+*/
+
+/*
+id
+- Só é permitido um único id para cada elemento da página 
+- Para um mesma página, o id pertence exclusivamente ao elemento em que fora declarado (se a página for diferente, pode-se repetir o id)
+- É representada, em css, por: nomedoelemento#nomedoid ou #nomedoid
+
+class
+- É permitida mais de uma para cada elemento
+- Não é exclusiva de nenhum elemento
+- É representada, em css, por: .nomedaclass
+
+id e class podem ser declaradas num mesmo elemento
+
+Hierarquia de Prevalência
+- Específico > Genérico
+- id > class > ... > body
+*/
+body {
+    background-color: #add8e6;
+}
+
+h1 {
+    color: #0000cd;
+}
+
+h1#tit-prin {
+    text-align: center;
+    color: #add8e6;
+    background-color: #0000cd;
+}
+
+h2 {
+    color: #5151d6;
+}
+
+#subtit-prin {
+    text-align: center;
+}
+
+.par-prin {
+    font-style: italic;
+}
+
+.destaque {
+    font-size: 20px;
+}

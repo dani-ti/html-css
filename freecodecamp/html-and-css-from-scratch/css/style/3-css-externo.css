@@ -1,0 +1,18 @@
+h1 {
+    color: red;
+    background-color: darkcyan;
+    font-size: 3m;
+}
+
+h2 {
+    color: crimson;
+    background-color: cyan;
+    font-size: 2m;
+}
+
+/* CSS */
+/* Seletores = h1, h2*/
+/* Bloco de Declaração = {Declarações} */
+/* Declaração = Propriedade: Valor; */
+/* Propriedades = color, background-color, font-size */
+/* Valores = red, darkcyan, 3m, ... */

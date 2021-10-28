@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: darkgray;
+            text-decoration: none;
+            font-weight: normal;
+
+        }
+
+        /*
+        Pseudo-Elementos
+        - Referem-se classes, elementos e id's
+        - Modificam o conteúdo
+        - Em CSS, podem ser representadas por: nomedaclasse/elemento/id::nomedopseudoelemento
+        */
+
+        a::after {
+            content: ' <';
+            color: mediumblue;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        a::before {
+            content: '> ';
+            color: mediumblue;
+            text-decoration: none;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links Personalizados</h1>
+    <hr>
+    <ul>
+        <li><a href="https://www.stoodi.com.br/?utm_source=bing&utm_medium=cpc&utm_term=stoodi&utm_content=KW_Stoodi&utm_campaign=Search-brand-purchase&msclkid=05fc9cc329291bd089e3fdd7d61f51ec" target="_blank">Stoodi</a></li>
+        <li><a href="https://descomplica.com.br/vestibulares/enem/?utm_source=ads_googleinst&utm_medium=search&utm_campaign=psq-institucional-vest-converter&device=c&network=g&utm_content=523542976212&matchtype=e&utm_term=sb-institucional-descomplica-e&gclid=CjwKCAjwjdOIBhA_EiwAHz8xm0YS42HUt7VyztrzQsQGRxbeT_RXrP0UqQZ0WkBo0s-ubU_M_-EMahoCcg4QAvD_BwE" target="_blank">Descomplica</a></li>
+        <li><a href="https://www.curso-objetivo.br/index.asp" target="_blank">Objetivo</a></li>
+    </ul>
+</body>
+</html>

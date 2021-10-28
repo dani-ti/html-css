@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            height: 150px;
+            width: 250px;
+            background-color: lightskyblue;
+            color: blue;
+
+            /*
+            Sentido de Declaração:
+            - width -> color -> style
+            */
+            border-width: 10px;
+            border-color: blue;
+            border-style: solid;
+
+            /*
+            Sentido de Declaração:
+            - Horário
+            - top -> right -> bottom -> left
+            */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            
+            margin: 10px auto 40px auto;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blue;
+        }
+        a {
+            color: red;
+
+            border: 1px red dashed;
+
+            /*
+            Short Hand
+            
+            Declaração padding-margin: 
+            - top right bottom left
+            - top-bottom right-left
+            - top-bottom-right-left
+            
+            Declaração border-outline
+            - width color style
+            */
+
+            padding: 10px 5px 10px 5px;
+
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        User Agente = Navegador
+        - Quando não fora feito nenhuma estilização por parte do usuário no CSS, o próprio navegador fará uma configuração padrão
+
+        display
+        - Determina o nível da caixa
+        - display: block;
+        -- Determina uma caixa box-level
+        - display: inline;
+        -- Determina uma caixa inline-level
+        - display: inline-block;
+        -- Determina uma caixa inline-level com algumas características de caixas box-level
+
+        DevTools (Google Chrome)
+        - ctrl + shift + i
+    -->
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur <a href="#">perspiciatis</a> nemo voluptates adipisicing elit.</p>
+</body>
+</html>

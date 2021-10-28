@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: auto;
+
+            min-width: 250px;
+            max-width: 1000px;
+
+            border-radius: 10px;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Título</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo aliquam sed debitis magni, quae sunt numquam fuga cupiditate, perspiciatis omnis totam obcaecati deleniti? Quisquam nostrum iure sequi hic in pariatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt tempora recusandae similique corporis totam accusantium! Iste a accusamus fugit quidem sed, at voluptatibus possimus esse voluptate, similique tempora aspernatur perspiciatis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit quisquam, sapiente eaque, repellat nihil dicta quod odit eveniet quia temporibus nam inventore excepturi, corrupti expedita tempora eligendi ab tempore aliquam!</p>
+        <picture>
+            <source media="(max-width: 800px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, accusamus nobis. Itaque, aperiam molestias nemo cum, quae eaque aspernatur labore nobis laboriosam commodi totam minima ab excepturi, molestiae praesentium odit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere iste quod quia eius reiciendis quis at provident nemo tempore, vero incidunt aperiam nesciunt error pariatur, ipsa, explicabo maiores fugit voluptatum!</p>
+        <picture>
+            <source media="(min-width: 800px)" srcset="imagens/irina-blok.jpg">
+            <img src="imagens/irina-blok-pq.jpg" alt="">
+        </picture>
+    </main>
+</body>
+</html>

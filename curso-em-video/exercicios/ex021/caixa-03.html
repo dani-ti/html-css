@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Personalizada</title>
+    <style>
+        h1 {
+            border: 20px solid transparent;
+            padding: 10px;
+        }
+
+        #h1-1 {
+            border-image-source: url('borda.png');
+            border-image-slice: 30;
+            border-image-repeat: repeat;
+        }
+        #h1-2 {
+            /*
+            Ordem de Declaração do Border-Image
+            - source -> slive -> repeat
+            */
+            border-image: url('borda.png') 30 stretch;
+        }
+        #h1-3 {
+            border-image: url('borda.png') 39 stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1-1">Borda 1</h1>
+    <h1 id="h1-2">Borda 2</h1>
+    <h1 id="h1-3">Borda 3</h1>
+</body>
+</html>

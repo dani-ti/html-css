@@ -1,0 +1,36 @@
+/* Seletores de Elementos */
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: crimson;
+}
+
+p {
+    color: darkslategrey;
+}
+
+/* Seletores de Grupos */
+
+body {
+    background-color: gray;
+}
+
+h1, h2, p {
+    background-color: white;
+}
+
+/* Seletores ID*/
+
+#p2 {
+    color: violet;
+}
+
+/* Seletores Class*/
+
+.exemplo {
+    background-color: aquamarine;
+}
+

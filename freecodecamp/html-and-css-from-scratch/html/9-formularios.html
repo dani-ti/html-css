@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="">
+
+        <label for="nome">Primeiro Nome:</label>
+        <input type="text" name="nome" id="nome"><br>
+        
+        <p>Senha:</p>
+        <input type="password" placeholder="Senha"><br><br>
+        
+        <p>Email: <input type="email" value="email@email.com"></p>
+        
+        <p>Descrição:</p>
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+
+        <p>Selecione uma linguagem de programação:</p>
+        <input type="radio" name="ling_prog" id="" value="javascript" checked="checked">JavaScript<br>
+        <input type="radio" name="ling_prog" id="" value="python">Python<br>
+        <input type="radio" name="ling_prog" id="" value="java">Java<br>
+
+        <p>Bandas:</p>
+        <input type="checkbox" name="bandas" id="" value="pink_floyd" checked="checked">Pink Floyd<br>
+        <input type="checkbox" name="bandas" id="" value="radiohead">Radiohead<br>
+        <input type="checkbox" name="bandas" id="" value="metallica">Metallica<br>
+        
+        <p>Instrumento:
+        <select name="instrumentos" id="">
+            <option value="guitarra">Guitarra</option>
+            <option value="baixo">Baixo</option>
+            <option value="violao">Violão</option>
+        </select></p>
+
+        <br>
+        <input type="submit" value="Enviar Dados">
+        <!-- 
+            <button type="submit">Enviar</button>
+        -->
+        
+    </form>
+</body>
+</html>
+
+<!--
+    action e method
+    - Atributos que dialogam com o back-end
+
+    name
+    - Atributo utilizado para enviar os dados
+    - Para os "radius buttons", deve conter o mesmo nome, se não será possível marcar múltiplas opções
+
+    id
+    - Atributo utilizado para labels e JavaScript
+-->
