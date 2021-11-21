@@ -1,0 +1,66 @@
+/*
+text-align
+- left = start
+- right = end
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+#p1 {
+    text-align: center;
+}
+
+#p2 {
+    text-align: end;
+}
+
+#p3 {
+    text-align: justify;
+}
+
+#p4 {
+    text-indent: 1em;
+}
+
+#p5 {
+    line-height: 3em;
+}
+
+#p6 {
+    letter-spacing: 2px;
+}
+
+#p7 {
+    word-spacing: 15px;
+}
+
+#p8 {
+    text-transform: capitalize;
+}
+
+#p9 {
+    text-transform: lowercase;
+}
+
+#p10 {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+#p12 {
+    text-decoration: line-through;
+}
+
+#p13 {
+    text-decoration: overline;
+}
+
+#p14 {
+    text-decoration: underline;
+}

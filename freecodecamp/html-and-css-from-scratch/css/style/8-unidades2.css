@@ -1,0 +1,35 @@
+/*
+vh
+- Height
+- Relativo
+- Porcentagem da tela
+
+vw
+- Width
+- Relativo
+- Porcentagem da tela
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner1 {
+    width: 25vw;
+    height: 25vh;
+    background-color: crimson;
+}
+
+.banner2 {
+    width: 50vw;
+    height: 50vh;
+    background-color: cyan;
+}
+
+.banner3 {
+    width: 100vw;
+    height: 100vh;
+    background-color: hotpink;
+}

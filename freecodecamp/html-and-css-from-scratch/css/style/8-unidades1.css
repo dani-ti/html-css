@@ -1,0 +1,64 @@
+/*
+    Unidades
+    - Absolutas (Não dependem do parent element)
+    - Relativas (Dependem do parent element)
+
+    Pixels(px)
+    - Absoluto
+
+    Porcentagem(%)
+    - Relativo
+
+    Em(em)
+    - Relativo
+    - Parent é body
+    -- Relaciona-se ao valor do estilo padrão do navegador, que é, geralmente, 16px (pode ser alterado nas configurações do navegador).
+    - Parent não é body
+    -- Relaciona-se ao valor de seu parent.
+    - 1 em = Valor base
+
+    Rem(rem)
+    - Relativo
+    - Relaciona-se somente com o root (html), que é, conforme o estilo padrão do navegador, geralmente, 16px (pode ser alterado nas configurações do navegador).
+    - 1 rem = Valor base
+
+*/
+
+h1 {
+    font-size: 40px;
+    width: 200px;
+    height: 150px;
+    background: aquamarine;
+}
+
+.fora {
+    width: 400px;
+    height: 400px;
+    background: darkcyan;
+}
+
+.dentro {
+    width: 100%;
+    height: 50%;
+    background: cyan;
+}
+
+.parentnb {
+    font-size: 32px;
+}
+
+.parentnr {
+    font-size: 32px;
+}
+
+.relativoem {
+    font-size: 1em;
+}
+
+.relativorem {
+    font-size: 1rem;
+}
+
+.absoluto {
+    font-size: 16px;
+}
