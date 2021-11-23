@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho do Fundo</title>
+    <style>
+        /*
+        background-size: contain;
+        - Exibe a imagem inteira (sem cortes)
+
+        background-size: cover;
+        - Embora possa apresentar cortes, exibe a imagem tentando ocupar a tela inteira (view port), independente da dimensão desta
+        */
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        main {
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Título 1</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quaerat autem, similique ab veniam impedit, dolor, sapiente doloribus officiis qui sequi pariatur doloremque quibusdam maxime laborum vel deleniti! Illum, saepe?
+        </p>
+    </main>
+</body>
+</html>
