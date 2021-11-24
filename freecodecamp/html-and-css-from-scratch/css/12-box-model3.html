@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /*
+        outline: width style color
+        - Shothand
+        */
+        div {
+            padding: 20px;
+            background-color: green;
+            margin: 40px;
+        }
+
+        div#div1 {
+            border: 5px solid black;
+        }
+
+        div#div2 {
+            outline-width: 5px;
+            outline-style: solid;
+            outline-color: black;
+            outline-offset: 10px;
+        }
+
+        div#div3 {
+            outline: 5px solid black;
+            outline-offset: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        Div 1
+    </div>
+    <br>
+    <div id="div2">
+        Div 2
+    </div>
+    <div id="div3">
+        Div 3
+    </div>
+
+</body>
+
+</html>

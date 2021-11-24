@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        /*
+        padding: top right bottom left;
+        - Shorthand
+
+        padding: top-bottom right-left
+        - Shorthand
+        */
+
+        /*
+        margin: top right bottom left;
+        - Shorthand
+
+        margin: top-bottom right-left
+        - Shorthand
+        */
+
+        /*
+        border: width style color;
+        - Shorthand
+        */
+
+        * {
+            margin: 0px;
+        }
+        div#div1 {
+            padding-top: 10px;
+            padding-right: 15px;
+            padding-bottom: 20px;
+            padding-left: 25px;
+
+            margin-bottom: 0;
+
+            border-style: solid;
+            border-width: 10px;
+            border-color: sandybrown;
+
+            background-color: red;
+        }
+
+        div#div2 {
+
+            padding: 10px 15px 20px 25px;
+
+            margin-top: 0;
+
+            background-color: blue;
+        }
+
+        div#div3 {
+
+            padding: 10px 15px 20px 25px;
+
+            margin: 50px;
+
+            border: 15px solid sandybrown;
+
+            background-color: green;
+        }
+
+        div#div4 {
+
+            padding: 25px;
+
+            border-top-style: solid;
+            border-right-style: dotted;
+            border-bottom-style: double;
+            border-left-style: dashed;
+            border-top-width: 5px;
+            border-right-width: 10px;
+            border-bottom-width: 15px;
+            border-left-width: 20px;
+            border-top-color: red;
+            border-right-color: blue;
+            border-bottom-color: green;
+            border-left-color: sandybrown;
+
+            background-color: pink;
+        }
+        
+        img {
+            margin: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        Div 1
+    </div>
+    <div id="div2">
+        Div 2
+    </div>
+    <div id="div3">
+        Div 3
+    </div>
+    <div id="div4">
+        Div 4
+    </div>
+    <img src="https://www.kasandbox.org/programming-images/misc/boxmodel.png">
+</body>
+</html>
